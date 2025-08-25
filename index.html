@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="page_title">Soufiane Harzane | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/S.H. Logo.png">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">Soufiane Harzane</div>
+    <ul>
+      <li><a href="#home" data-i18n="nav_home">Home</a></li>
+      <li><a href="#about" data-i18n="nav_about">About Me</a></li>
+      <li><a href="#academic" data-i18n="nav_academic">Academic Career</a></li>
+      <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+      <li><a href="#certificates" data-i18n="nav_certificates">Certificates</a></li>
+      <li><a href="#languages" data-i18n="nav_languages">Languages</a></li>
+      <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+      <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="toggle-theme" aria-label="Toggle theme">🌙</button>
+      <button id="toggle-lang" class="lang-btn" aria-label="Switch language" title="Switch language">
+        <img id="lang-flag" alt="Language flag" width="20" height="14">
+        <span id="lang-code"></span>
+      </button>
+    </div>
+
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="hero-container">
+      <div class="hero-text" data-aos="fade-right">
+        <h1 data-i18n="hero_title">Hi, I'm <span class="highlight">Soufiane Harzane</span></h1>
+        <h2 data-i18n="hero_subtitle">Aspiring Data Scientist</h2>
+        <p data-i18n="hero_tagline">I turn data into decisions.</p>
+      </div>
+      <div class="hero-image" data-aos="fade-left">
+        <img src="assets/my photo.jpg" alt="Soufiane Harzane" />
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <div class="about-image" data-aos="fade-left">
+        <img src="assets/about me.jpg" alt="Soufiane at work">
+      </div>
+      <div class="about-text" data-aos="fade-right">
+        <h2 data-i18n="about_title">About Me</h2>
+        <p data-i18n="about_body">
+          Hello! I'm Soufiane Harzane, a passionate data scientist with a strong background in Information Systems and
+          Digital Transformation. I recently earned my engineering degree and am currently preparing to pursue a Master
+          of Science in Data Science at the University of Greenwich in London. My journey into data science began with a
+          deep curiosity about how data shapes our world and how insights hidden within numbers can drive real change.
+          Over the years, I’ve developed skills in Python, machine learning, SQL, data visualization, and AI model
+          fine-tuning — and I’ve applied these in real-world projects, including an AI-powered code analysis tool I
+          built during my final-year internship. What sets me apart is my dedication to continuous learning,
+          problem-solving, and storytelling with data. I love transforming complex datasets into clear, actionable
+          insights that help people make smarter decisions. Whether it's building predictive models, cleaning messy
+          data, or exploring trends, I enjoy every step of the process. I’m also deeply interested in applying data
+          science across industries, from finance and health to football and education. Beyond the technical skills, I
+          value communication, integrity, and impact — and I’m always eager to collaborate on projects that matter.
+          Welcome to my portfolio — a space where I share what I’ve learned, built, and continue to explore.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="academic" class="academic-section">
+    <h2 data-i18n="academic_title">Academic Career</h2>
+    <div class="academic-timeline">
+      <div class="academic-item" data-aos="fade-up">
+        <span class="timeline-dot" aria-hidden="true"></span>
+        <h3 data-i18n="ac_1_title">International Baccalaureate, French Option, Mathematics Sciences B</h3>
+        <p class="school" data-i18n="ac_1_school">Lycée Scientifique Tour Hassan, Rabat</p>
+        <p class="date" data-i18n="ac_1_date">Sep 2017 – Jun 2020</p>
+      </div>
+      <br>
+      <div class="academic-item" data-aos="fade-up" data-aos-delay="100">
+        <span class="timeline-dot" aria-hidden="true"></span>
+        <h3 data-i18n="ac_2_title">Preparatory Classes for Engineering Schools, PSI Option</h3>
+        <p class="school" data-i18n="ac_2_school">Lycée Moulay Youssef, Rabat</p>
+        <p class="date" data-i18n="ac_2_date">Sep 2020 – Jul 2022</p>
+      </div>
+      <br>
+      <div class="academic-item" data-aos="fade-up" data-aos-delay="200">
+        <span class="timeline-dot" aria-hidden="true"></span>
+        <h3 data-i18n="ac_3_title">Engineering in Information Systems and Digital Transformation</h3>
+        <p class="school" data-i18n="ac_3_school">School of Information Sciences, Rabat</p>
+        <p class="date" data-i18n="ac_3_date">Sep 2022 – Jun 2025</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="internships" class="internship-section">
+    <h2 data-i18n="internships_title">Internships</h2>
+    <div class="internship-timeline">
+
+      <!-- Introductory Internship -->
+      <div class="internship-item" data-aos="fade-up">
+        <span class="timeline-dot" aria-hidden="true"></span>
+        <h3 data-i18n="int_1_title">Introductory Internship</h3>
+        <p class="company" data-i18n="int_1_company">PrevDev</p>
+        <p class="date" data-i18n="int_1_date">Jul 2023</p>
+        <ul class="details" data-i18n="int_1_details">
+          <li>Developed a prototype web application for bus fleet tracking.</li>
+          <li>Applied Rapid Application Development (RAD) methodology.</li>
+          <li>Generated recommendations tailored to the programming language and project context.</li>
+          <li>Used Figma for prototyping.</li>
+        </ul>
+      </div>
+
+      <!-- Advanced Internship -->
+      <div class="internship-item" data-aos="fade-up" data-aos-delay="100">
+        <span class="timeline-dot" aria-hidden="true"></span>
+        <h3 data-i18n="int_2_title">Advanced Internship</h3>
+        <p class="company" data-i18n="int_2_company">Agence de Développement Digital</p>
+        <p class="date" data-i18n="int_2_date">Jul 2024</p>
+        <ul class="details" data-i18n="int_2_details">
+          <li>Designed and developed an employability platform integrating artificial intelligence.</li>
+          <li>Implemented a CV upload feature supporting multiple formats (PDF, images, etc.).</li>
+          <li>Built a content-based recommendation engine connecting candidates to relevant job offers.</li>
+          <li>Designed an intuitive user interface.</li>
+        </ul>
+      </div>
+
+      <!-- Final-Year Internship -->
+      <div class="internship-item" data-aos="fade-up" data-aos-delay="200">
+        <span class="timeline-dot" aria-hidden="true"></span>
+        <h3 data-i18n="int_3_title">Final-Year Internship</h3>
+        <p class="company" data-i18n="int_3_company">DXC Technology Morocco</p>
+        <p class="date" data-i18n="int_3_date">Feb 2025 – Jun 2025</p>
+        <ul class="details" data-i18n="int_3_details">
+          <li>Automated static code analysis to detect poor development practices and violations of coding standards.
+          </li>
+          <li>Assessed code complexity to identify areas requiring simplification for improved maintainability.</li>
+          <li>Generated recommendations tailored to the programming language and project context.</li>
+          <li>Implemented a feedback learning system to refine recommendations based on developer input.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="skills" class="skills-section">
+    <h2 data-i18n="skills_title">Skills</h2>
+
+    <h3 data-i18n="skills_core">Core Data & ML</h3>
+    <div class="skills-grid">
+      <div class="skill" data-aos="zoom-in" data-aos-delay="0"><img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"
+          class="logo"><span>Python</span></div>
+      <div class="skill" data-aos="zoom-in" data-aos-delay="100"><img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" alt="R" class="logo"><span>R</span>
+      </div>
+      <div class="skill" data-aos="zoom-in" data-aos-delay="200"><img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="Scala"
+          class="logo"><span>Scala</span></div>
+      <div class="skill" data-aos="zoom-in" data-aos-delay="300"><img
+          src="https://img.icons8.com/ios-filled/100/database.png" alt="SQL" class="logo"><span>SQL</span></div>
+      <div class="skill" data-aos="zoom-in" data-aos-delay="400"><img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow"
+          class="logo"><span>TensorFlow</span></div>
+      <div class="skill" data-aos="zoom-in" data-aos-delay="500"><img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch"
+          class="logo"><span>PyTorch</span></div>
+      <div class="skill" data-aos="zoom-in" data-aos-delay="600"><img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas"
+          class="logo"><span>Pandas</span></div>
+      <div class="skill" data-aos="zoom-in" data-aos-delay="700"><img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy"
+          class="logo"><span>NumPy</span></div>
+      <div class="skill" data-aos="zoom-in" data-aos-delay="800"><img
+          src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-learn"
+          class="logo"><span>Scikit-learn</span></div>
+      <div class="skill" data-aos="zoom-in" data-aos-delay="900"><img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/69/XGBoost_logo.png" alt="XGBoost"
+          class="logo"><span>XGBoost</span></div>
+      <div class="skill" data-aos="zoom-in" data-aos-delay="1000"><img
+          src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="HuggingFace Transformers"
+          class="logo"><span>Transformers</span></div>
+    </div>
+    <br><br>
+
+    <h3 data-i18n="skills_bi">BI & Visualization</h3>
+    <div class="skills-grid">
+      <div class="skill" data-aos="fade-up" data-aos-delay="0"><img src="https://img.icons8.com/color/96/power-bi.png"
+          alt="Power BI" class="logo"><span>Power BI</span></div>
+      <div class="skill" data-aos="fade-up" data-aos-delay="100"><img src="https://img.icons8.com/color/96/ms-excel.png"
+          alt="Excel" class="logo"><span>Excel</span></div>
+      <div class="skill" data-aos="fade-up" data-aos-delay="200"><img
+          src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Tableau_Logo.png" alt="Tableau"
+          class="logo"><span>Tableau</span></div>
+      <div class="skill" data-aos="fade-up" data-aos-delay="300"><img
+          src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg" alt="Matplotlib"
+          class="logo"><span>Matplotlib</span></div>
+      <div class="skill" data-aos="fade-up" data-aos-delay="400"><img
+          src="https://seaborn.pydata.org/_static/logo-wide-lightbg.svg" alt="Seaborn" class="logo"><span>Seaborn</span>
+      </div>
+      <div class="skill" data-aos="fade-up" data-aos-delay="500"><img
+          src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Plotly-logo.png" alt="Plotly"
+          class="logo"><span>Plotly</span></div>
+      <div class="skill" data-aos="fade-up" data-aos-delay="600"><img
+          src="https://streamlit.io/images/brand/streamlit-mark-color.png" alt="Streamlit"
+          class="logo"><span>Streamlit</span></div>
+    </div>
+    <br><br>
+
+    <h3 data-i18n="skills_web">Web & Backend</h3>
+    <div class="skills-grid">
+      <div class="skill" data-aos="flip-left" data-aos-delay="0"><img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"
+          class="logo"><span>HTML</span></div>
+      <div class="skill" data-aos="flip-left" data-aos-delay="100"><img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"
+          class="logo"><span>CSS</span></div>
+      <div class="skill" data-aos="flip-left" data-aos-delay="200"><img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"
+          class="logo"><span>JavaScript</span></div>
+      <div class="skill" data-aos="flip-left" data-aos-delay="300"><img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"
+          class="logo"><span>PHP</span></div>
+      <div class="skill" data-aos="flip-left" data-aos-delay="400"><img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"
+          class="logo"><span>Java</span></div>
+      <div class="skill" data-aos="flip-left" data-aos-delay="500"><img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask"
+          class="logo"><span>Flask</span></div>
+      <div class="skill" data-aos="flip-left" data-aos-delay="600"><img
+          src="https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png" alt="FastAPI"
+          class="logo"><span>FastAPI</span></div>
+      <div class="skill" data-aos="flip-left" data-aos-delay="700"><img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django"
+          class="logo"><span>Django</span></div>
+      <div class="skill" data-aos="flip-left" data-aos-delay="800"><img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular"
+          class="logo"><span>Angular</span></div>
+      <div class="skill" data-aos="flip-left" data-aos-delay="900"><img
+          src="https://upload.wikimedia.org/wikipedia/commons/3/38/SQLite370.svg" alt="SQLite3"
+          class="logo"><span>SQLite3</span></div>
+      <div class="skill" data-aos="flip-left" data-aos-delay="1000"><img
+          src="https://img.icons8.com/ios-filled/100/oracle-logo.png" alt="PL/SQL" class="logo"><span>PL/SQL</span>
+      </div>
+    </div>
+    <br><br>
+
+    <h3 data-i18n="skills_dev">Dev Tools</h3>
+    <div class="skills-grid">
+      <div class="skill" data-aos="fade-left" data-aos-delay="0"><img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"
+          class="logo"><span>Docker</span></div>
+      <div class="skill" data-aos="fade-left" data-aos-delay="100"><img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"
+          class="logo"><span>Git</span></div>
+      <div class="skill" data-aos="fade-left" data-aos-delay="200"><img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"
+          class="logo"><span>GitHub</span></div>
+      <div class="skill" data-aos="fade-left" data-aos-delay="300"><img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"
+          class="logo"><span>Figma</span></div>
+      <div class="skill" data-aos="fade-left" data-aos-delay="400"><img
+          src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Apache_Spark_logo.svg" alt="Apache Spark"
+          class="logo"><span>Spark</span></div>
+    </div>
+
+  </section>
+
+  <!-- Certificates Section -->
+  <section id="certificates" class="certificates-section">
+    <div class="content" data-aos="fade-up">
+      <h2 data-i18n="certs_title">Certificates</h2>
+
+      <h3 class="certificate-category" data-i18n="certs_tech">💻 Technical Certificates</h3>
+      <div class="certificates-grid">
+        <div class="certificate" data-aos="zoom-in" data-aos-delay="0">
+          <img src="assets/Introduction to Python by Sololearn.jpg" alt="Python Certificate"
+            onclick="openLightbox(this.src)">
+        </div>
+        <div class="certificate" data-aos="zoom-in" data-aos-delay="200">
+          <img src="assets/Python Intermediate by Sololearn.jpg" alt="Python Intermediate Certificate"
+            onclick="openLightbox(this.src)">
+        </div>
+        <div class="certificate" data-aos="zoom-in" data-aos-delay="300">
+          <img src="assets/Introduction to HTML by Sololearn.jpg" alt="HTML Certificate"
+            onclick="openLightbox(this.src)">
+        </div>
+      </div>
+
+      <h3 class="certificate-category" data-i18n="certs_lang">🌍 Language Certificates</h3>
+      <div class="certificates-grid">
+        <div class="certificate" data-aos="zoom-in" data-aos-delay="0">
+          <img src="assets/B2 by IELTS.jpg" alt="IELTS Certificate" onclick="openLightbox(this.src)">
+        </div>
+        <div class="certificate" data-aos="zoom-in" data-aos-delay="100">
+          <img src="assets/B2 by Busuu.jpg" alt="French Certificate" onclick="openLightbox(this.src)">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Single lightbox (removed duplicate) -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Certificate">
+  </div>
+
+  <section id="languages" class="languages-section">
+    <div class="content" data-aos="fade-up">
+      <h2 data-i18n="lang_title">Languages</h2><br>
+      <div class="languages-grid">
+        <div class="language-card" data-aos="fade-up" data-aos-delay="0">
+          <img src="https://flagcdn.com/w40/ma.png" alt="Arabic">
+          <div>
+            <h3 data-i18n="lang_ar">Arabic</h3>
+            <p data-i18n="lang_ar_level">Native Speaker</p>
+          </div>
+        </div>
+        <div class="language-card" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://flagcdn.com/w40/fr.png" alt="French">
+          <div>
+            <h3 data-i18n="lang_fr">French</h3>
+            <p data-i18n="lang_fr_level">Second Language</p>
+          </div>
+        </div>
+        <div class="language-card" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://flagcdn.com/w40/gb.png" alt="English">
+          <div>
+            <h3 data-i18n="lang_en">English</h3>
+            <p data-i18n="lang_en_level">B2 – IELTS 6.5</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="content" data-aos="fade-up">
+      <h2 data-i18n="projects_title">Projects</h2>
+
+      <div class="project-card" data-aos="flip-up" data-aos-delay="100">
+        <div class="project-info">
+          <h3 data-i18n="prj_1_title">Transaction Analyzer</h3>
+          <p data-i18n="prj_1_desc">A full machine learning pipeline to detect fraudulent transactions.</p>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/soufianeHar/Transcation_Analyzer" target="_blank" class="btn"
+            data-i18n="btn_code">View Code</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-aos="flip-up" data-aos-delay="200">
+        <div class="project-info">
+          <h3 data-i18n="prj_2_title">Chatbot for Autism Support</h3>
+          <p data-i18n="prj_2_desc">A specialized chatbot designed to assist individuals with autism through interactive
+            conversation and support features.</p>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/soufianeHar/Chatbot-autism" target="_blank" class="btn" data-i18n="btn_code">View
+            Code</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-aos="flip-up" data-aos-delay="300">
+        <div class="project-info">
+          <h3 data-i18n="prj_3_title">Tic Tac Toe AI (Minimax + Alpha-Beta)</h3>
+          <p data-i18n="prj_3_desc">An unbeatable AI-powered Tic Tac Toe game using the Minimax algorithm with
+            Alpha-Beta pruning for optimized decision making.</p>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/soufianeHar/tic-tac-toe-minimax-alpha-beta-pruning" target="_blank" class="btn"
+            data-i18n="btn_code">View Code</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-aos="flip-up" data-aos-delay="400">
+        <div class="project-info">
+          <h3 data-i18n="prj_4_title">Sales & Customer Insights Dashboard</h3>
+          <p data-i18n="prj_4_desc">An interactive Power BI dashboard visualizing e-commerce sales performance, customer
+            trends, and key business KPIs.</p>
+        </div>
+        <div class="project-links">
+          <a href="https://drive.google.com/file/d/1RakLf5apQgN94CEW3zf6cEhXRlO-xjul/view?usp=drive_link"
+            target="_blank" class="btn live" data-i18n="btn_live">View Dashboard</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="content" data-aos="fade-up">
+      <h2 data-i18n="contact_title">Contact</h2>
+
+      <div class="email-container">
+        <a href="mailto:soufianeharzane02@gmail.com" class="email-link">
+          <i class="fas fa-envelope"></i> soufianeharzane02@gmail.com
+        </a>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill" data-aos="zoom-in" data-aos-delay="0">
+          <a href="https://github.com/SoufianeHar" target="_blank" title="GitHub">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"
+              class="logo">
+          </a>
+          <span>GitHub</span>
+        </div>
+
+        <div class="skill" data-aos="zoom-in" data-aos-delay="100">
+          <a href="https://www.linkedin.com/in/soufiane-harzane-060a96280/" target="_blank" title="LinkedIn">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn"
+              class="logo">
+          </a>
+          <span>LinkedIn</span>
+        </div>
+
+        <div class="skill" data-aos="zoom-in" data-aos-delay="200">
+          <a href="https://www.instagram.com/s.harzane" target="_blank" title="Instagram">
+            <img src="https://img.icons8.com/ios-filled/100/instagram-new.png" alt="Instagram" class="logo">
+          </a>
+          <span>Instagram</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+
+    // ---- Light/Dark toggle ----
+    const themeBtn = document.getElementById('toggle-theme');
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.dataset.theme = savedTheme;
+    updateThemeIcon(savedTheme);
+    themeBtn.addEventListener('click', () => {
+      const current = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = current;
+      localStorage.setItem('theme', current);
+      updateThemeIcon(current);
+    });
+    function updateThemeIcon(mode) { themeBtn.textContent = mode === 'dark' ? '☀️' : '🌙'; }
+
+    // ---- i18n: EN/FR toggle ----
+    const i18n = {
+      en: {
+        page_title: 'Soufiane Harzane | Portfolio',
+        nav_home: 'Home', nav_about: 'About Me', nav_academic: 'Academic Career', nav_skills: 'Skills',
+        nav_certificates: 'Certificates', nav_languages: 'Languages', nav_projects: 'Projects', nav_contact: 'Contact',
+        hero_title: "Hi, I'm <span class=\"highlight\">Soufiane Harzane</span>",
+        hero_subtitle: 'Aspiring Data Scientist',
+        hero_tagline: 'I turn data into decisions.',
+        about_title: 'About Me',
+        about_body: `Hello! I'm Soufiane Harzane, a passionate data scientist with a strong background in Information Systems and Digital Transformation. I recently earned my engineering degree and am currently preparing to pursue a Master of Science in Data Science at the University of Greenwich in London. My journey into data science began with a deep curiosity about how data shapes our world and how insights hidden within numbers can drive real change. Over the years, I’ve developed skills in Python, machine learning, SQL, data visualization, and AI model fine-tuning — and I’ve applied these in real-world projects, including an AI-powered code analysis tool I built during my final-year internship. What sets me apart is my dedication to continuous learning, problem-solving, and storytelling with data. I love transforming complex datasets into clear, actionable insights that help people make smarter decisions. Whether it's building predictive models, cleaning messy data, or exploring trends, I enjoy every step of the process. I’m also deeply interested in applying data science across industries, from finance and health to football and education. Beyond the technical skills, I value communication, integrity, and impact — and I’m always eager to collaborate on projects that matter. Welcome to my portfolio — a space where I share what I’ve learned, built, and continue to explore.`,
+        academic_title: 'Academic Career',
+        ac_1_title: 'International Baccalaureate, French Option, Mathematics Sciences B',
+        ac_1_school: 'Lycée Scientifique Tour Hassan, Rabat', ac_1_date: 'Sep 2017 – Jun 2020',
+        ac_2_title: 'Preparatory Classes for Engineering Schools, PSI Option',
+        ac_2_school: 'Lycée Moulay Youssef, Rabat', ac_2_date: 'Sep 2020 – Jul 2022',
+        ac_3_title: 'Engineering in Information Systems and Digital Transformation',
+        ac_3_school: 'School of Information Sciences, Rabat', ac_3_date: 'Sep 2022 – Jun 2025',
+
+        internships_title: 'Internships',
+        int_1_title: 'Introductory Internship',
+        int_1_company: 'PrevDev',
+        int_1_date: 'Jul 2023',
+        int_1_details: [
+          'Developed a prototype web application for bus fleet tracking.',
+          'Applied Rapid Application Development (RAD) methodology.',
+          'Generated recommendations tailored to the programming language and project context.',
+          'Used Figma for prototyping.'
+        ],
+        int_2_title: 'Advanced Internship',
+        int_2_company: 'Agence de Développement Digital',
+        int_2_date: 'Jul 2024',
+        int_2_details: [
+          'Designed and developed an employability platform integrating artificial intelligence.',
+          'Implemented a CV upload feature supporting multiple formats (PDF, images, etc.).',
+          'Built a content-based recommendation engine connecting candidates to relevant job offers.',
+          'Designed an intuitive user interface.'
+        ],
+        int_3_title: 'Final-Year Internship',
+        int_3_company: 'DXC Technology Morocco',
+        int_3_date: 'Feb 2025 – Jun 2025',
+        int_3_details: [
+          'Automated static code analysis to detect poor development practices and violations of coding standards.',
+          'Assessed code complexity to identify areas requiring simplification for improved maintainability.',
+          'Generated recommendations tailored to the programming language and project context.',
+          'Implemented a feedback learning system to refine recommendations based on developer input.'
+        ],
+
+        skills_title: 'Skills', skills_core: 'Core Data & ML', skills_bi: 'BI & Visualization', skills_web: 'Web & Backend', skills_dev: 'Dev Tools',
+        certs_title: 'Certificates', certs_tech: '💻 Technical Certificates', certs_lang: '🌍 Language Certificates',
+        lang_title: 'Languages', lang_ar: 'Arabic', lang_ar_level: 'Native Speaker', lang_fr: 'French', lang_fr_level: 'Second Language', lang_en: 'English', lang_en_level: 'B2 – IELTS 6.5',
+
+        projects_title: 'Projects',
+        prj_1_title: 'Transaction Analyzer', prj_1_desc: 'A full machine learning pipeline to detect fraudulent transactions.',
+        prj_2_title: 'Chatbot for Autism Support', prj_2_desc: 'A specialized chatbot designed to assist individuals with autism through interactive conversation and support features.',
+        prj_3_title: 'Tic Tac Toe AI (Minimax + Alpha-Beta)', prj_3_desc: 'An unbeatable AI-powered Tic Tac Toe game using the Minimax algorithm with Alpha-Beta pruning for optimized decision making.',
+        prj_4_title: 'Sales & Customer Insights Dashboard',
+        prj_4_desc: 'An interactive Power BI dashboard visualizing e-commerce sales performance, customer trends, and key business KPIs.',
+        btn_code: 'View Code', btn_demo: 'Try Demo', btn_live: 'View Dashboard',
+
+        contact_title: 'Contact', contact_email_label: 'Email:'
+      },
+      fr: {
+        page_title: 'Soufiane Harzane | Portfolio',
+        nav_home: 'Accueil', nav_about: 'À propos', nav_academic: 'Parcours académique', nav_skills: 'Compétences',
+        nav_certificates: 'Certificats', nav_languages: 'Langues', nav_projects: 'Projets', nav_contact: 'Contact',
+        hero_title: "Salut, je suis <span class=\"highlight\">Soufiane Harzane</span>",
+        hero_subtitle: 'Jeune data scientist',
+        hero_tagline: 'Je transforme les données en décisions.',
+        about_title: 'À propos',
+        about_body: `Bonjour ! Je suis Soufiane Harzane, passionné par la data science avec une solide formation en Systèmes d’Information et Transformation Digitale. J’ai récemment obtenu mon diplôme d’ingénieur et je me prépare à poursuivre un Master of Science en Data Science à l’University of Greenwich à Londres. Ma curiosité pour l’impact des données sur le monde et pour les insights cachés dans les chiffres m’a guidé vers ce domaine. Au fil des années, j’ai développé des compétences en Python, apprentissage automatique, SQL, visualisation de données et fine‑tuning de modèles d’IA — appliquées à des projets concrets, dont un outil d’analyse de code assisté par IA réalisé lors de mon stage de fin d’études. Ce qui me distingue : l’apprentissage continu, la résolution de problèmes et l’art de raconter une histoire avec les données. J’aime transformer des datasets complexes en insights clairs et actionnables pour aider à prendre de meilleures décisions. Qu’il s’agisse de modèles prédictifs, de nettoyage de données ou d’exploration de tendances, j’apprécie chaque étape. Je m’intéresse aussi à l’application de la data science dans divers secteurs, de la finance et la santé au football et à l’éducation. Au‑delà des compétences techniques, je valorise la communication, l’intégrité et l’impact — et je suis toujours partant pour collaborer sur des projets qui comptent. Bienvenue sur mon portfolio — l’endroit où je partage ce que j’apprends, ce que je construis et ce que j’explore.`,
+        academic_title: 'Parcours académique',
+        ac_1_title: 'Baccalauréat international, option française, Sciences Mathématiques B',
+        ac_1_school: 'Lycée Scientifique Tour Hassan, Rabat', ac_1_date: 'Sept. 2017 – Juin 2020',
+        ac_2_title: 'Classes préparatoires aux grandes écoles, filière PSI',
+        ac_2_school: 'Lycée Moulay Youssef, Rabat', ac_2_date: 'Sept. 2020 – Juil. 2022',
+        ac_3_title: 'Ingénierie des Systèmes d’Information et Transformation Digitale',
+        ac_3_school: "École des Sciences de l’Information, Rabat", ac_3_date: 'Sept. 2022 – Juin 2025',
+
+        internships_title: 'Stages',
+        int_1_title: 'Stage d’initiation',
+        int_1_company: 'PrevDev',
+        int_1_date: 'Juil. 2023',
+        int_1_details: [
+          'Développement d’un prototype d’application web pour le suivi de flotte de bus.',
+          'Application de la méthodologie Rapid Application Development (RAD).',
+          'Génération de recommandations adaptées au langage et au contexte du projet.',
+          'Utilisation de Figma pour le prototypage.'
+        ],
+        int_2_title: 'Stage avancé',
+        int_2_company: 'Agence de Développement Digital',
+        int_2_date: 'Juil. 2024',
+        int_2_details: [
+          'Conception et développement d’une plateforme d’employabilité intégrant l’intelligence artificielle.',
+          'Mise en place d’une fonctionnalité de dépôt de CV multiformat (PDF, images, etc.).',
+          'Développement d’un moteur de recommandation basé sur le contenu reliant candidats et offres pertinentes.',
+          'Conception d’une interface utilisateur intuitive.'
+        ],
+        int_3_title: 'Stage de fin d’études',
+        int_3_company: 'DXC Technology Maroc',
+        int_3_date: 'Fév. 2025 – Juin 2025',
+        int_3_details: [
+          'Automatisation de l’analyse statique de code pour détecter les mauvaises pratiques et les violations des standards.',
+          'Évaluation de la complexité du code pour identifier les zones à simplifier et améliorer la maintenabilité.',
+          'Génération de recommandations adaptées au langage et au contexte du projet.',
+          'Mise en place d’un système d’apprentissage par feedback pour affiner les recommandations selon les retours des développeurs.'
+        ],
+
+        skills_title: 'Compétences', skills_core: 'Data & ML — Cœur', skills_bi: 'BI & Visualisation', skills_web: 'Web & Backend', skills_dev: 'Outils Dév',
+        certs_title: 'Certificats', certs_tech: '💻 Certificats techniques', certs_lang: '🌍 Certificats de langue',
+        lang_title: 'Langues', lang_ar: 'Arabe', lang_ar_level: 'Langue maternelle', lang_fr: 'Français', lang_fr_level: 'Deuxième langue', lang_en: 'Anglais', lang_en_level: 'B2 – IELTS 6.5',
+
+        projects_title: 'Projets',
+        prj_1_title: 'Transaction Analyzer', prj_1_desc: 'Pipeline ML complet pour détecter les transactions frauduleuses.',
+        prj_2_title: "Chatbot d’accompagnement pour l’autisme", prj_2_desc: 'Chatbot spécialisé pour aider les personnes autistes via une conversation interactive et des fonctionnalités de soutien.',
+        prj_3_title: 'Tic Tac Toe IA (Minimax + Alpha-Beta)', prj_3_desc: 'Un jeu Morpion imbattable utilisant Minimax avec élagage Alpha‑Bêta pour des décisions optimisées.',
+        prj_4_title: 'Tableau de bord Ventes & Clients',
+        prj_4_desc: 'Un tableau de bord Power BI interactif visualisant la performance e‑commerce, les tendances clients et les KPIs clés.',
+        btn_code: 'Voir le code', btn_demo: 'Essayer la démo', btn_live: 'Voir le tableau de bord',
+
+        contact_title: 'Contact', contact_email_label: 'Email :'
+      }
+    };
+
+    const langBtn = document.getElementById('toggle-lang');
+    const langFlag = document.getElementById('lang-flag');
+    const langCode = document.getElementById('lang-code');
+    const LANG_KEY = 'portfolio_lang';
+    let currentLang = localStorage.getItem(LANG_KEY) || 'en';
+    applyTranslations(currentLang);
+    updateLangUI(currentLang);
+
+    langBtn.addEventListener('click', () => {
+      currentLang = currentLang === 'en' ? 'fr' : 'en';
+      localStorage.setItem(LANG_KEY, currentLang);
+      applyTranslations(currentLang);
+      updateLangUI(currentLang);
+    });
+    function updateLangUI(lang) {
+      // show CURRENT language in the button
+      langCode.textContent = lang.toUpperCase();
+      langFlag.src = lang === 'en'
+        ? 'https://flagcdn.com/w20/gb.png'
+        : 'https://flagcdn.com/w20/fr.png';
+      langFlag.alt = lang === 'en' ? 'English' : 'Français';
+
+      // put TARGET language in the tooltip
+      const target = lang === 'en' ? 'Français' : 'English';
+      langBtn.title = `Switch to ${target}`;
+      langBtn.setAttribute('aria-label', `Switch to ${target}`);
+    }
+    function applyTranslations(lang) {
+      document.documentElement.setAttribute('lang', lang);
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        const val = i18n[lang][key];
+
+        if (Array.isArray(val) && el.tagName === 'UL') {
+          el.innerHTML = val.map(item => `<li>${item}</li>`).join('');
+        } else if (typeof val === 'string') {
+          el.innerHTML = val;
+        }
+        // If val is undefined, leave existing content as fallback.
+      });
+      document.title = i18n[lang]['page_title'];
+    }
+
+    function updateLangButton(lang) {
+      // Button text shows the target toggle language
+      langBtn.textContent = lang === 'en' ? 'FR' : 'EN';
+      // Keep an icon flag visible too for clarity (flag of current language)
+      langFlag.src = lang === 'en' ? 'https://flagcdn.com/w20/gb.png' : 'https://flagcdn.com/w20/fr.png';
+      langBtn.appendChild(langFlag);
+    }
+
+    // ---- Simple Lightbox helpers ----
+    function openLightbox(src) {
+      const lb = document.getElementById('lightbox');
+      const img = document.getElementById('lightbox-img');
+      img.src = src; lb.style.display = 'flex';
+    }
+    function closeLightbox() { document.getElementById('lightbox').style.display = 'none'; }
+    window.openLightbox = openLightbox; window.closeLightbox = closeLightbox;
+  </script>
+</body>
+
+</html>
