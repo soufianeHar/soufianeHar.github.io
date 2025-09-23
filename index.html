@@ -18,8 +18,10 @@
       <li><a href="#home" data-i18n="nav_home">Home</a></li>
       <li><a href="#about" data-i18n="nav_about">About Me</a></li>
       <li><a href="#academic" data-i18n="nav_academic">Academic Career</a></li>
+      <!-- NEW: Internships/Stages in navbar -->
+      <li><a href="#internships" data-i18n="nav_internships">Internships</a></li>
       <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
-      <li><a href="#certificates" data-i18n="nav_certificates">Certificates</a></li>
+      <!--  <li><a href="#certificates" data-i18n="nav_certificates">Certificates</a></li>-->
       <li><a href="#languages" data-i18n="nav_languages">Languages</a></li>
       <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
       <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
@@ -55,19 +57,11 @@
       <div class="about-text" data-aos="fade-right">
         <h2 data-i18n="about_title">About Me</h2>
         <p data-i18n="about_body">
-          Hello! I'm Soufiane Harzane, a passionate data scientist with a strong background in Information Systems and
-          Digital Transformation. I recently earned my engineering degree and am currently preparing to pursue a Master
-          of Science in Data Science at the University of Greenwich in London. My journey into data science began with a
-          deep curiosity about how data shapes our world and how insights hidden within numbers can drive real change.
-          Over the years, I’ve developed skills in Python, machine learning, SQL, data visualization, and AI model
-          fine-tuning — and I’ve applied these in real-world projects, including an AI-powered code analysis tool I
-          built during my final-year internship. What sets me apart is my dedication to continuous learning,
-          problem-solving, and storytelling with data. I love transforming complex datasets into clear, actionable
-          insights that help people make smarter decisions. Whether it's building predictive models, cleaning messy
-          data, or exploring trends, I enjoy every step of the process. I’m also deeply interested in applying data
-          science across industries, from finance and health to football and education. Beyond the technical skills, I
-          value communication, integrity, and impact — and I’m always eager to collaborate on projects that matter.
-          Welcome to my portfolio — a space where I share what I’ve learned, built, and continue to explore.
+          I’m Soufiane Harzane, an engineer in Information Systems and Digital Transformation and a passionate data scientist. During my internship at DXC Technology Morocco, I developed an AI-powered code analysis tool, where I applied my expertise in Python, machine learning, SQL, data visualization, and AI model fine-tuning.
+          <br><br>
+          What excites me most is turning complex datasets into meaningful insights and building solutions that drive real impact. I enjoy tackling challenges such as cleaning messy data, designing predictive models, and storytelling with data to support smarter decisions.
+          <br><br>
+          I’m particularly interested in applying data science across diverse fields — from finance and healthcare to football and education. My approach combines strong technical skills with curiosity, problem-solving, and a commitment to continuous learning.
         </p>
       </div>
     </div>
@@ -138,8 +132,7 @@
         <p class="company" data-i18n="int_3_company">DXC Technology Morocco</p>
         <p class="date" data-i18n="int_3_date">Feb 2025 – Jun 2025</p>
         <ul class="details" data-i18n="int_3_details">
-          <li>Automated static code analysis to detect poor development practices and violations of coding standards.
-          </li>
+          <li>Automated static code analysis to detect poor development practices and violations of coding standards.</li>
           <li>Assessed code complexity to identify areas requiring simplification for improved maintainability.</li>
           <li>Generated recommendations tailored to the programming language and project context.</li>
           <li>Implemented a feedback learning system to refine recommendations based on developer input.</li>
@@ -271,7 +264,8 @@
     </div>
 
   </section>
-  <!-- Certificates Section -->
+
+  <!-- Certificates Section 
   <section id="certificates" class="certificates-section">
     <div class="content" data-aos="fade-up">
       <h2 data-i18n="certs_title">Certificates</h2>
@@ -307,7 +301,7 @@
       </div>
     </div>
   </section>
-
+-->
   <!-- Single lightbox (removed duplicate) -->
   <div id="lightbox" class="lightbox" onclick="closeLightbox()">
     <img id="lightbox-img" src="" alt="Certificate">
@@ -456,13 +450,19 @@
     const i18n = {
       en: {
         page_title: 'Soufiane Harzane | Portfolio',
-        nav_home: 'Home', nav_about: 'About Me', nav_academic: 'Academic Career', nav_skills: 'Skills',
+        nav_home: 'Home', nav_about: 'About Me', nav_academic: 'Academic Career',
+        nav_internships: 'Internships',
+        nav_skills: 'Skills',
         nav_certificates: 'Certificates', nav_languages: 'Languages', nav_projects: 'Projects', nav_contact: 'Contact',
         hero_title: "Hi, I'm <span class=\"highlight\">Soufiane Harzane</span>",
         hero_subtitle: 'Aspiring Data Scientist',
         hero_tagline: 'I turn data into decisions.',
         about_title: 'About Me',
-        about_body: `Hello! I'm Soufiane Harzane, a passionate data scientist with a strong background in Information Systems and Digital Transformation. I recently earned my engineering degree and am currently preparing to pursue a Master of Science in Data Science at the University of Greenwich in London. My journey into data science began with a deep curiosity about how data shapes our world and how insights hidden within numbers can drive real change. Over the years, I’ve developed skills in Python, machine learning, SQL, data visualization, and AI model fine-tuning — and I’ve applied these in real-world projects, including an AI-powered code analysis tool I built during my final-year internship. What sets me apart is my dedication to continuous learning, problem-solving, and storytelling with data. I love transforming complex datasets into clear, actionable insights that help people make smarter decisions. Whether it's building predictive models, cleaning messy data, or exploring trends, I enjoy every step of the process. I’m also deeply interested in applying data science across industries, from finance and health to football and education. Beyond the technical skills, I value communication, integrity, and impact — and I’m always eager to collaborate on projects that matter. Welcome to my portfolio — a space where I share what I’ve learned, built, and continue to explore.`,
+        about_body: `I’m Soufiane Harzane, an engineer in Information Systems and Digital Transformation and a passionate data scientist. During my internship at DXC Technology Morocco, I developed an AI-powered code analysis tool, where I applied my expertise in Python, machine learning, SQL, data visualization, and AI model fine-tuning.
+
+What excites me most is turning complex datasets into meaningful insights and building solutions that drive real impact. I enjoy tackling challenges such as cleaning messy data, designing predictive models, and storytelling with data to support smarter decisions.
+
+I’m particularly interested in applying data science across diverse fields — from finance and healthcare to football and education. My approach combines strong technical skills with curiosity, problem-solving, and a commitment to continuous learning.`,
         academic_title: 'Academic Career',
         ac_1_title: 'International Baccalaureate, French Option, Mathematics Sciences B',
         ac_1_school: 'Lycée Scientifique Tour Hassan, Rabat', ac_1_date: 'Sep 2017 – Jun 2020',
@@ -516,13 +516,19 @@
       },
       fr: {
         page_title: 'Soufiane Harzane | Portfolio',
-        nav_home: 'Accueil', nav_about: 'À propos', nav_academic: 'Parcours académique', nav_skills: 'Compétences',
+        nav_home: 'Accueil', nav_about: 'À propos', nav_academic: 'Parcours académique',
+        nav_internships: 'Stages',
+        nav_skills: 'Compétences',
         nav_certificates: 'Certificats', nav_languages: 'Langues', nav_projects: 'Projets', nav_contact: 'Contact',
         hero_title: "Salut, je suis <span class=\"highlight\">Soufiane Harzane</span>",
         hero_subtitle: 'Jeune data scientist',
         hero_tagline: 'Je transforme les données en décisions.',
         about_title: 'À propos',
-        about_body: `Bonjour ! Je suis Soufiane Harzane, passionné par la data science avec une solide formation en Systèmes d’Information et Transformation Digitale. J’ai récemment obtenu mon diplôme d’ingénieur et je me prépare à poursuivre un Master of Science en Data Science à l’University of Greenwich à Londres. Ma curiosité pour l’impact des données sur le monde et pour les insights cachés dans les chiffres m’a guidé vers ce domaine. Au fil des années, j’ai développé des compétences en Python, apprentissage automatique, SQL, visualisation de données et fine‑tuning de modèles d’IA — appliquées à des projets concrets, dont un outil d’analyse de code assisté par IA réalisé lors de mon stage de fin d’études. Ce qui me distingue : l’apprentissage continu, la résolution de problèmes et l’art de raconter une histoire avec les données. J’aime transformer des datasets complexes en insights clairs et actionnables pour aider à prendre de meilleures décisions. Qu’il s’agisse de modèles prédictifs, de nettoyage de données ou d’exploration de tendances, j’apprécie chaque étape. Je m’intéresse aussi à l’application de la data science dans divers secteurs, de la finance et la santé au football et à l’éducation. Au‑delà des compétences techniques, je valorise la communication, l’intégrité et l’impact — et je suis toujours partant pour collaborer sur des projets qui comptent. Bienvenue sur mon portfolio — l’endroit où je partage ce que j’apprends, ce que je construis et ce que j’explore.`,
+        about_body: `Je m’appelle Soufiane Harzane, ingénieur en Systèmes d’Information et Transformation Digitale, et data scientist passionné. Lors de mon stage chez DXC Technology Maroc, j’ai développé un outil d’analyse de code basé sur l’IA, en mobilisant mes compétences en Python, machine learning, SQL, visualisation de données et fine-tuning de modèles d’IA.
+
+Ce qui me motive avant tout, c’est la capacité de transformer des ensembles de données complexes en informations exploitables et de concevoir des solutions ayant un véritable impact. J’aime relever des défis tels que le nettoyage de données, la conception de modèles prédictifs et le storytelling par la donnée pour favoriser une meilleure prise de décision.
+
+Je m’intéresse particulièrement à l’application de la data science dans des domaines variés — finance, santé, football ou encore éducation — en alliant rigueur technique, curiosité, sens de la résolution de problèmes et apprentissage continu.`,
         academic_title: 'Parcours académique',
         ac_1_title: 'Baccalauréat international, option française, Sciences Mathématiques B',
         ac_1_school: 'Lycée Scientifique Tour Hassan, Rabat', ac_1_date: 'Sept. 2017 – Juin 2020',
@@ -567,9 +573,9 @@
         projects_title: 'Projets',
         prj_1_title: 'Transaction Analyzer', prj_1_desc: 'Pipeline ML complet pour détecter les transactions frauduleuses.',
         prj_2_title: "Chatbot d’accompagnement pour l’autisme", prj_2_desc: 'Chatbot spécialisé pour aider les personnes autistes via une conversation interactive et des fonctionnalités de soutien.',
-        prj_3_title: 'Tic Tac Toe IA (Minimax + Alpha-Beta)', prj_3_desc: 'Un jeu Morpion imbattable utilisant Minimax avec élagage Alpha‑Bêta pour des décisions optimisées.',
+        prj_3_title: 'Tic Tac Toe IA (Minimax + Alpha-Beta)', prj_3_desc: 'Un jeu Morpion imbattable utilisant Minimax avec élagage Alpha-Bêta pour des décisions optimisées.',
         prj_4_title: 'Tableau de bord Ventes & Clients',
-        prj_4_desc: 'Un tableau de bord Power BI interactif visualisant la performance e‑commerce, les tendances clients et les KPIs clés.',
+        prj_4_desc: 'Un tableau de bord Power BI interactif visualisant la performance e-commerce, les tendances clients et les KPIs clés.',
         btn_code: 'Voir le code', btn_demo: 'Essayer la démo', btn_live: 'Voir le tableau de bord',
 
         contact_title: 'Contact', contact_email_label: 'Email :'
